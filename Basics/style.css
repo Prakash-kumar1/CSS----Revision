@@ -1,0 +1,46 @@
+/* Embeded import link from google fonts for paragraph */
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&display=swap');
+
+
+h2 {
+    color: blue;
+    font-family: 'DynaPuff', cursive;
+}
+
+p{
+    color: lightcoral;
+     font-family: 'Alumni Sans Collegiate One', sans-serif; 
+     font-weight: 400; 
+}
+
+.font{
+    color: chartreuse;
+    font-family: 'DynaPuff', cursive;
+}
+
+/* rgb means Red , Green , Blue. it values goes from  0 to 255 */
+h3{
+    background-color: #00ffff;
+    color: rgb(255,0,0);
+}
+
+/* HEX color : write  color picker on google , and choose your favourite HEX color*/
+/* Hex starts from "#" , it values goes from 0 to 9 and a to f */
+/* Ist two value represents "Red" another two value represents "Green" ,last two value represents "Blue" */
+#para{
+    background-color: #ffffff;
+    color: #f5e342;
+    font-family: sans-serif;
+}
+
+/* <!-- Adding 3 class in one tag --> */
+.text-green{
+    color: brown;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bg-dark{
+    background-color: lightskyblue;
+}
+
