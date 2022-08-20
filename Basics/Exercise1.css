@@ -1,0 +1,56 @@
+/* <!-- Writting  Code  in a Proper Manner --> */
+
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=DynaPuff&family=Montserrat:wght@400;700&display=swap');
+
+header{
+    background-color: rgba(128, 128, 128, 0.683);
+    color: green;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+article{
+    background-color: rgba(128, 128, 128, 0.683);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    
+.head{
+    color: green;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main{
+    background-color: aquamarine;
+    color: blueviolet;
+}
+
+h4{
+    background-color: black;
+    color: red;
+}
+
+/* /* <!-- Or We can use this way --> */
+
+div{
+    background-color: rgba(128, 128, 128, 0.683);
+}
+
+h1{
+    color: green;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2{
+    color: green;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3{
+    color: green;
+    font-family: 'Montserrat', sans-serif;
+}
+
+span{
+    background-color: aquamarine;
+    color: blueviolet;
+}
