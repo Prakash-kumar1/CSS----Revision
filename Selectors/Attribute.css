@@ -37,3 +37,39 @@ a[href $= ".in"]{
         color: darkgreen;
     }
     
+
+/* CSS Specificity =>> */
+
+/* Inline style attribute > Id selector > Class selector > Element selector  */
+
+div#container ul.my-songs li{
+    color: brown;
+    background: yellow;
+}
+/* Specificity => 0 (Inline style attribute) , 1 (Id selector) , 1 (Class selector) , 3 (Element selector)=> 113 */
+
+.favourite{
+    color: yellow;
+    background: brown ;
+}
+/* Specificity => 0 (Inline style attribute) , 0 (Id selector) , 1 (Class selector) , 0 (Element selector)=> 10 */
+/* .favourite  Specificity  is less. so , it shows no effect */
+
+/* let's increase the .favourite  Specificity */
+div#container ul.my-songs li.favourite{
+    color: yellow;
+    background: brown ;
+}
+/* Specificity => 0 (Inline style attribute) , 1 (Id selector) , 2 (Class selector) , 3 (Element selector)=> 123 */
+/* .favourite  Specificity  is Increased. now, it shows  effect */
+
+
+
+
+
+
+
+
+
+
+
