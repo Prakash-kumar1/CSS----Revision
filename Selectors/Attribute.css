@@ -1,0 +1,39 @@
+/* Selecting  text Attribute */
+
+input[type="text"]{
+    background-color: antiquewhite;
+    color: red;
+}
+
+/* Selecting  Password Attribute */
+input[type="password"]{
+    background-color: black;
+    color: gold;
+}
+
+/* Selecting  link Attribute */
+a[href = "http://google.com"]{
+    color: aqua;
+}
+
+a[href = "facebook.com"]{
+    color: red;
+}
+
+/* Selecting those all link which has "javascript" */
+a[href *= "javascript"]{
+    color: yellowgreen;
+}
+
+/* Selecting those all link which starts from "https"*/
+a[href ^= "https"]{
+/* ^ this is Caret symbol , present on 6*/
+    color: hotpink;
+}
+
+
+/* Selecting those all link which ends with ".in"*/
+a[href $= ".in"]{
+        color: darkgreen;
+    }
+    
