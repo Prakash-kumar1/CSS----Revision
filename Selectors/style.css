@@ -1,0 +1,47 @@
+* universal Selector */
+* {
+    color: blueviolet;
+}
+
+header{
+    background-color: lightpink;
+}
+
+/* Choose that section which class is my-articles . no space between section and my-articles*/
+section.my-articles{
+    background-color: aquamarine;
+}
+
+/* Descedent Selector  OR  Combinator : */
+
+header p{
+/* only paragraph under header color changed */
+    color: red;
+}
+
+li a{
+ /*only a under li color changed  */
+    color: chartreuse;
+}
+
+ section.my-articles  h2{
+/* Choose that section which class is my-articles , all h2 under section becomes Pink in color */
+    color: hotpink;
+} 
+
+/* select only that h2 , which is direct child of section */
+section.my-articles > h2{
+        color: goldenrod;
+    }
+
+ /* Adjacent selector : uses with "+" sign */
+
+ul+p{
+/* after ul which p comes first , color changed */
+    color: black;
+}
+
+h2+p{
+/* after h2 which p comes first , color changed */
+    color: black;
+}
