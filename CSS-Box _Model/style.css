@@ -2,7 +2,7 @@
 /* Distance between Border and Content is known as Padding */
 /* Area outside border is known as Margin */
 
-h1{
+h3{
     border: 4px double brown;
 /* Different ways of writing Padding */
 
@@ -35,3 +35,51 @@ margin: 20px auto;
 text-align: center;
 background: pink;
 }
+
+/* <!-- Exercise => 1 (for Understanding Basic Concepts) --> */
+
+h1{
+    border: 1px solid ghostwhite;
+    width: 800px;
+    background: grey;
+    text-align: center;
+   /* For putting Border in center */
+    margin: 30px auto;
+/* 20px gives (top ,bottom) margin and auto automatically adjust (left, right) margin. */
+}
+
+section{
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 10px;
+    width: 800px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
