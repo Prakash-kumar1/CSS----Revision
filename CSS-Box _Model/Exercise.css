@@ -19,6 +19,7 @@ body{
 
 a{
     color: #444;
+/* By default any Link color is Blue with a Underline . so, if we want to remove that we use text-decoration:none*/
     text-decoration: none;
 }
 
