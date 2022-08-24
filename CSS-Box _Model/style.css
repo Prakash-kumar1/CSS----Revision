@@ -157,7 +157,8 @@ hr{
     /* Now we have to use a property   box-sizing: border-box; */
 
 .size2{
-    box-sizing: border-box;
+/* this is a important property , must used in layouts */
+    box-sizing: border-box;                        
     width: 500px;
     background-color: lightcoral;
     border: 10px solid blue;
