@@ -28,3 +28,16 @@ p:hover{
 p:active{
     color: magenta;
 }
+
+/* Always try to maintain the order :- Link , Visited , Hover , Active */
+
+/* on focus we want to change Property */
+input:focus{
+    padding: 7px;
+    outline: none;
+    border: 3px dashed greenyellow;
+}
+
+input:required{
+    color: red;
+}
