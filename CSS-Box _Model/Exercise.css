@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
 
+/* CSS Default Browser style and CSS Reset  */
+
+/* By default Browser provides some padding and margin. so, for removing that we use (Universal Selector)*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* (Universal Selector) * always uses before everything.  */
+
+
 body{
     font-family: 'Poppins', sans-serif;
     color: #444;
@@ -13,9 +24,12 @@ a{
 
 h1{
     border-bottom: 1px solid #444;
+    margin: 20px;
 }
+
 nav{
     background: #cecece;
+    margin: 30px;
 }
 
 nav ul{
