@@ -2,6 +2,10 @@
 /* Distance between Border and Content is known as Padding */
 /* Area outside border is known as Margin */
 
+body{
+   color: red;
+}
+
 h3{
     border: 4px double brown;
 /* Different ways of writing Padding */
@@ -168,6 +172,19 @@ hr{
 }
 
 
+/* <!-- CSS  Inheritance --> */
 
+/* Currenty it Inherit Color from body but we can change this */
+.container1{
+    color: blue;
+}
 
+.container2{
+    color: green;
+}
 
+h6{
+    color: magenta;
+}
+
+/* we change all the color which Inherited from body */
