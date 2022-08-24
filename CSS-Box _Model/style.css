@@ -4,6 +4,7 @@
 
 body{
    color: red;
+   font-weight: bolder;
 }
 
 h3{
@@ -149,6 +150,7 @@ hr{
 .size1{
     width: 500px;
     margin-left: 20px;
+    font-weight: bold;
     background-color: lightcoral;
 /* width is 500px but adding border , it again increses */
     border: 10px solid blue;
@@ -166,6 +168,7 @@ hr{
     width: 500px;
     background-color: lightcoral;
     border: 10px solid blue;
+    font-weight: 700;
     padding: 50px;
     margin: 10px;
     margin-left: 20px;
@@ -184,7 +187,11 @@ hr{
 }
 
 h6{
+    background-color: lightcyan;
     color: magenta;
+/* text-align property put in centre , right , left as we want*/
+    text-align: center;
 }
 
 /* we change all the color which Inherited from body */
+
