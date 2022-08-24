@@ -134,12 +134,37 @@ img{
 }
 
 
+/* <!-- Understanding Box Sizing : Border Box --> */
 
+hr{
+    width: 500px;
+    margin-left: 20px;
+    border: 1px dashed black;
+}
 
+.size1{
+    width: 500px;
+    margin-left: 20px;
+    background-color: lightcoral;
+/* width is 500px but adding border , it again increses */
+    border: 10px solid blue;
+/* after adding Padding , it's width again increases */
+    padding: 50px;
+/* Now Total width = 500px + 10px + 50px = 560px */
+/* it is a problem. so, we want that Border don't increase if we give Padding , margin or Anythigh */
+}
 
+    /* Now we have to use a property   box-sizing: border-box; */
 
-
-
+.size2{
+    box-sizing: border-box;
+    width: 500px;
+    background-color: lightcoral;
+    border: 10px solid blue;
+    padding: 50px;
+    margin: 10px;
+    margin-left: 20px;
+}
 
 
 
