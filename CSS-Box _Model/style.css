@@ -188,10 +188,50 @@ hr{
 
 h6{
     background-color: lightcyan;
+/* For increasing Font-Size */
+    font-size: 60px;
+/* For Decorating the text */
+    text-decoration: underline wavy burlywood;
     color: magenta;
 /* text-align property put in centre , right , left as we want*/
     text-align: center;
 }
 
 /* we change all the color which Inherited from body */
+
+
+/* <!-- Some more CSS Text Properties --> */
+
+.text{
+    background-color: lightgoldenrodyellow;
+/* For increasing Font-Size */
+      font-size: 40px;
+/* For Decorating the text */
+    text-decoration: overline wavy brown;
+    color: rgb(0, 255, 195);
+/* text-align property put in centre , right , left as we want*/
+    text-align: center;
+}
+
+.more{
+    background-color: bisque;
+    color: orchid;
+/* For increasing Distance between the Line */
+    line-height: 60px;
+/* For increasing Spaces between the words */
+    word-spacing: 13px;
+/* For increasing Spaces between the Letters */
+    letter-spacing: 6px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
