@@ -56,18 +56,72 @@ section{
     font-family: 'Times New Roman', Times, serif;
 }
 
+/* <!-- CSS  Margin Collapsing --> */
+
+.box1 , .box2{
+    border: 2px solid #444;
+    padding: 10px;
+}
+
+/* Which margin ig Greater it will take that margin . see in Developer tools */
+
+.box1{
+    margin-bottom: 80px;
+}
+
+.box2{
+    margin-top: 100px;
+}
+
+/* Block level elements take full width , but here we fix the width using width Property and same as with height*/
+.Block{
+    border: 8px solid blue;
+    padding: 10px;
+    text-align: center;
+    background: pink;
+    width: 1100px;
+    height: 80px;
+    /* For changing in InLine (h1 , h2 will show in In-Line) */
+    display: inline;
+}
 
 
+/* <!-- Inline elements only take that width which is required --> */
+a{
+    border: 8px solid red;
+/* In  Inline elements  Width  and  height property don't work . we can't fix width and height*/
+    width: 1100px;
+    height: 80px;
 
+/* /* In  Inline elements margin Top and Bottom Don't work . only margin left and Right work*/
+margin-top: 80px;
+margin-bottom: 80px;
+margin-left: 100px;
+margin-right: 100px;
 
+/* In  Inline elements Padding Top and Bottom will mashup the thinghs it don't look good. so, we use padding Left and Right*/
+/* padding-top: 50px;
+padding-bottom: 50px; */
+padding-left: 50px;
+padding-right: 50px;
 
+/* For changing in Block (Link 1 and Link 2 will become Block means take Complete width)*/
+display: block;
 
+}
 
-
-
-
-
-
+/* <!-- Inline elements have some issues with Width , Height , Margin , Padding. so, we use Display: Inline - Block Property--> */
+span{
+    border: 3px double greenyellow;
+    display: inline-block;
+/* In Inline elements margin Top and Bottom Don't work but using  Inline - Block Property it will work*/
+    margin: 20px;
+/* In Inline elements Padding Top and Bottom creates Overlapping but using  Inline - Block Property it Don't creates any Overlapping*/
+    padding: 20px;
+/* In  Inline elements we can't fix width and height but using  Inline - Block Property we fix width and height*/
+    width: 150px;
+    height: 100px;
+}
 
 
 
