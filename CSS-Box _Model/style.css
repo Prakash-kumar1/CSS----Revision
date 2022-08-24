@@ -127,9 +127,10 @@ span{
 img{
     width: 200px;
  /* Height will automatically adjust by Browser */
-    border: 4px dotted hotpink;
-    padding: 10px;
-    margin: 10px;
+    border: 4px double hotpink;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 25px;
 }
 
 
