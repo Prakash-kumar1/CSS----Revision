@@ -119,11 +119,18 @@ span{
 /* In Inline elements Padding Top and Bottom creates Overlapping but using  Inline - Block Property it Don't creates any Overlapping*/
     padding: 20px;
 /* In  Inline elements we can't fix width and height but using  Inline - Block Property we fix width and height*/
-    width: 150px;
-    height: 100px;
+    width: 100px;
+    height: 70px;
 }
 
-
+/* <!-- Image is Different from Other Inline Elements --> */
+img{
+    width: 200px;
+ /* Height will automatically adjust by Browser */
+    border: 4px dotted hotpink;
+    padding: 10px;
+    margin: 10px;
+}
 
 
 
