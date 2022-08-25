@@ -7,29 +7,29 @@
 /* :not(p) means , except P change color but in above case except p , it also changes the color of body means Heading and paragraphs */
 /* are changed. so, for stopping this */
 
-body :not(p){
+/* body :not(p){
     color: magenta;
 }
 
 body :not(.fancy){
     background-color: antiquewhite;
     color: green;
-}
+} */
 
 
 /* <!-- :empty Pseudo Classes  --> */
 
-div:empty{
+/* div:empty{
     background: #222;
     border: 2px solid red;
     height: 100px;
     width: 100px;
-}
+} */
 
 
 /* <!-- :root Pseudo Classes : it means you select whole HTML. it has more specificity than html --> */
 
-:root{
+/* :root{
     background: aquamarine;
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -37,20 +37,45 @@ div:empty{
     border: 5px dotted blue;
     border-radius: 40px;
     margin: 50px;
+    word-spacing: 5px;
+    letter-spacing: 5px;
+} */
+
+
+/* <!-- For Observing Difference Above one OR Below one --> */
+
+
+/* <!-- ::First-letter , ::First-word , ::Selection , ::Before , ::After Pseudo Elements --> */
+
+/* In Pseudo Classes we use (:) single colon , but in  Pseudo Elements we use  (::)  Double colon*/
+
+
+/* p::first-letter{
+    font-size: 45px;
+    color: red;
 }
 
+.line::first-line{
+    font-size: 23px;
+    color: greenyellow;
+    letter-spacing: 6px;
+} */
+
+/* on selecting like for copy then you can see */
+/* h1::selection{
+    background: black;
+    color: white;
+}
+
+h2::selection{
+    background: lightcyan;
+    color: blue;
+} */
 
 
+/* <!-- For Observing Difference Above Two --> */
 
-
-
-
-
-
-
-
-
-
+/* <!-- ::Before , ::After Pseudo Elements --> */
 
 
 
