@@ -27,9 +27,11 @@ div:empty{
 }
 
 
+/* <!-- :root Pseudo Classes : it means you select whole HTML. it has more specificity than html --> */
 
-
-
+:root{
+    background: aquamarine;
+}
 
 
 
