@@ -7,24 +7,24 @@
 /* :not(p) means , except P change color but in above case except p , it also changes the color of body means Heading and paragraphs */
 /* are changed. so, for stopping this */
 
-/* body :not(p){
+body :not(p){
     color: magenta;
 }
 
 body :not(.fancy){
     background-color: antiquewhite;
     color: green;
-} */
+}
 
 
 /* <!-- :empty Pseudo Classes  --> */
 
-/* div:empty{
+div:empty{
     background: #222;
     border: 2px solid red;
     height: 100px;
     width: 100px;
-} */
+}
 
 
 /* <!-- :root Pseudo Classes : it means you select whole HTML. it has more specificity than html --> */
@@ -50,7 +50,7 @@ body :not(.fancy){
 /* In Pseudo Classes we use (:) single colon , but in  Pseudo Elements we use  (::)  Double colon*/
 
 
-/* p::first-letter{
+p::first-letter{
     font-size: 45px;
     color: red;
 }
@@ -59,10 +59,10 @@ body :not(.fancy){
     font-size: 23px;
     color: greenyellow;
     letter-spacing: 6px;
-} */
+}
 
 /* on selecting like for copy then you can see */
-/* h1::selection{
+h1::selection{
     background: black;
     color: white;
 }
@@ -70,29 +70,55 @@ body :not(.fancy){
 h2::selection{
     background: lightcyan;
     color: blue;
-} */
+}
 
 
 /* <!-- For Observing Difference Above Two --> */
 
 /* <!-- ::Before , ::After Pseudo Elements --> */
 
+/* ::Before Pseudo Elements ==>>  by default , It is an Inline Element and content property must be used for adding*/
+
+.cool::before{
+    display: block;
+    content: 'hello   ';
+    color: green;
+    border: 1px dashed dodgerblue;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.main::before{
+    content: "hi Everyone !!";
+    color: red;
+}
 
 
+/* ::After Pseudo Elements ==> same like above */
+
+.cool::after{
+    display: block;
+    content: 'hello   ';
+    color: green;
+    border: 1px dotted greenyellow;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+.main::after{
+    content: " Bye Everyone !!";
+    color: blue;
+}
 
 
+/* Important note :- Pseudo elements doesn't work on img , br input fields Etc . */
 
+/* Example=1 it don't work */
 
-
-
-
-
-
-
-
-
-
-
+img::before{
+    content: "Hey Beautiful";
+    color: magenta;
+}
 
 
 
