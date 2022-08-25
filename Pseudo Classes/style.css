@@ -20,12 +20,12 @@ a:active{
     color: #000;
 }
 
-p:hover{
+article:hover{
     color: gold;
 }
 
 /* click and hold  */
-p:active{
+article:active{
     color: magenta;
 }
 
@@ -40,4 +40,35 @@ input:focus{
 
 input:required{
     color: red;
+}
+
+
+/* First Child  and  First of type Pseudo class*/
+
+p:first-child{
+    color: brown;
+}
+
+h3:first-child{
+    color: chartreuse;
+}
+
+p:first-of-type{
+/* this will Over-ride Brown color */
+    color: darkmagenta;
+}
+
+/* Last Child  and  Last of type Pseudo class*/
+
+p:last-child{
+    color: burlywood;
+}
+
+h3:last-child{
+    color: hotpink;
+}
+
+p:last-of-type{
+/* this will Over-ride Brown color */
+    color: blue;
 }
