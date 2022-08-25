@@ -45,30 +45,94 @@ input:required{
 
 /* First Child  and  First of type Pseudo class*/
 
-p:first-child{
+/* p:first-child{
     color: brown;
 }
 
 h3:first-child{
     color: chartreuse;
-}
+}  */
 
-p:first-of-type{
+/* p:first-of-type{ */
 /* this will Over-ride Brown color */
-    color: darkmagenta;
-}
+    /* color: darkmagenta; */
+/* } */
 
-/* Last Child  and  Last of type Pseudo class*/
+/* Last Child  and  Last of type Pseudo class */
 
-p:last-child{
+/* p:last-child{
     color: burlywood;
 }
 
 h3:last-child{
     color: hotpink;
+} */
+
+/* p:last-of-type{ */
+/* this will Over-ride Brown color */
+    /* color: blue; */
+/* } */
+
+
+ /* ######## First Comment From Line => 46  to Line => 74  Then use this. Otherwise , You Will Confuse  ######## */
+
+
+/* nth Child  and  nth of type Pseudo class */
+
+p:nth-child(2){
+/*means , that paragraph which is IInd child of their Parent  */
+color: aqua;
 }
 
-p:last-of-type{
-/* this will Over-ride Brown color */
-    color: blue;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
