@@ -1,15 +1,20 @@
 /* <!-- :not Pseudo Classes  --> */
 
-:not(p){
+/* :not(p){
     color: goldenrod;
+} */
+
+/* :not(p) means , except P change color but in above case except p , it also changes the color of body means Heading and paragraphs */
+/* are changed. so, for stopping this */
+
+body :not(p){
+    color: magenta;
 }
 
-
-
-
-
-
-
+body :not(.fancy){
+    background-color: antiquewhite;
+    color: green;
+}
 
 
 
