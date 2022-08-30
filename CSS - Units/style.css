@@ -1,0 +1,139 @@
+/* <!-- There are Two types of CSS Units :
+    1.) Absolute Units ( pixels(px) , inch(in) , Points(pt) , Centi-meter(cm)
+    2.) Releative Units -->( % , em , vh , rem ) */
+
+
+h1{
+    font-size: 32px;
+    color: brown;
+
+}
+
+    /* 1.) Absolute Units Examples :  */
+
+    .absolute{
+        font-size: 32px;
+        font-size: 96px;
+
+        /* 1 Inch = 96px */
+        font-size: 1in;
+
+        /* 1 Inch = 2.54 cm  */
+        font-size: 2.54cm;
+
+        /* 1px = 0.75pt */
+        /* 16px = 16*0.75 => 12pt */
+
+        font-size: 12pt;
+        font-size: 32pt;
+        border: 4pt dashed red;
+        border-radius: 1in;
+    }
+
+
+ /* 1.) Releative Units Examples :  */
+
+/* Percentage Units */
+
+.percent{
+    border: 3px solid blue;
+    background-color: aquamarine;
+    width: 50%;
+ }
+
+ .releative{
+/* Pecentage always check their parents and used in case of Width and Margin*/ 
+    border: 2px dotted  green;
+    width: 50%;
+    background: lightcoral;
+    color: gold;
+    margin-left: 25%;
+/* Now, Both Left and Right are Equal */
+ }
+
+
+/* rem Units ==>>  It multiplies the size of HTML Elements*/
+/* By default , the size is 16px , it means 1 rem = 16px . But we can change size of HTML Elements */
+/* if the size is 10px then 2rem = 20px similarly, if the size is 35px then 3rem = 105px   */
+
+/* Now , we are changing the size of HTML Elements */
+html{
+    font-size: 12px;
+}
+
+/* ####$$$$%%%^^^^   OR   ####$$$$%%%^^^^*/
+
+/* root also selects the HTML , but Root has more Specificity than HTML */
+/* :root{
+    font-size: 12px;
+} */
+
+.box1{
+    font-size: 3rem;
+}
+
+.text-content{
+    font-size: 3rem;
+    border: 3rem solid magenta;
+    margin: 0.5rem;
+    padding: 2.5rem;
+}
+
+
+
+/* em Units ==>> This calculates size respective to their Body */
+
+.box2{
+    font-size: 36px;
+}
+/* box-2 size is 36 px , means h2 body is box2 then 2em means 36*2 = 72px */
+h2{
+    font-size: 2em;
+
+/* Now, font-size is 1em = 72px , if we give 0.5em border then it checks h2 not box2 means
+1em = 72px then  0.5em = 36px*/
+
+    border: 0.5em dashed rgba(148, 135, 222, 0.169);
+    border: 36px dashed rgba(148, 135, 222, 0.169);
+
+}
+
+.em{
+/* box-2 size is 36 px , then 0.5 em means , 1em = 36px and 0.5em = 18px */
+    font-size: 0.5em;
+
+/* Now, font-size is 1em = 18px , if we give 2em border then it checks Class em not box2 means
+ 2em = 36px  */
+
+    border: 2em dotted burlywood;
+    border: 36px dotted burlywood;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
