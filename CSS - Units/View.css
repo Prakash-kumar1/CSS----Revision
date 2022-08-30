@@ -1,0 +1,56 @@
+/* <!-- View-Port Height --> It takes full height of screen where we can see */
+/* It takes Complete screen size */
+
+.height{
+    height: 100vh;
+    background: lightcoral;
+}
+
+/* vmin  and  vmax  read it on your own */
+
+h1{
+    border: 4px solid red;
+    width: 50%;
+
+/* View-Port Width ==>> viewport means , that total area which seen by me . means whole HTML page */
+/* From left to Right , it becomes viewport Width (vw) */
+/* From Top to Bottom , it becomes viewport height (vh) */
+
+width: 50vw;
+}
+
+.box{
+    border: 4px solid blue;
+    padding: 5px;
+/* if we give 50% width , then it take according to their parent means body */
+     width: 50%;
+}
+
+h2{
+    border: 2px dashed orchid;
+    background-color: cadetblue;
+/* if we give 50% width , then it take according to their parent means Div with class = box */
+width: 50%;
+
+/* But if we give 50% View-Port width , then it Doesn't care about Div , it take according to their body */
+width: 50vw;
+/* now, it crosses the div */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
