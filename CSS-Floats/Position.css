@@ -1,0 +1,127 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container{
+    width: 800px;
+    border: 8px solid green;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.container h1{
+   background: lightyellow;
+    border: 4px solid red;
+/* By default , Position value is always Static */
+/* position: static; */
+
+/* But when we use Position value Releative , then we use 4 more Property */
+position: relative;
+top: 130px;
+left: 280px;
+
+/* Now h1 , is show up on paragraph , but we want it to go behind . so, we use Z-index property(By default, It is auto) */
+z-index: -1;
+
+}
+
+.container h2{
+    background: cadetblue;
+    border: 4px solid magenta;
+    position: absolute;     /*means , it will go outside from Document flow*/
+/*if we give top: 0px; it will go on Top and if we give right: 0px; it will go on right . similarly, for bottom and left  */
+   
+    /* top: 0px; */
+    right: 0;
+    bottom: 0px;
+    /* left: 0px; */
+}
+
+.container h3{
+   background: black;
+    color: #fff;
+/* for putting, our navBar above we use position fixed . */
+position: fixed;   /*on scrolling , it is fix*/
+/* For putting in always above , we use */
+top: 0;
+color: gold;
+/* sometimes , h3 will go behind any text.so, for removing this problem use==>>  z-index = 10 */
+}
+
+
+.container p{
+    background: lightgray;
+     border: 4px solid purple;
+/* for seeing , h1 behind paragraph , we make paragraph Transparent */
+background: rgba(211, 211, 211, 0); 
+}
+
+
+.container2{
+    position: relative;
+    width: 600px;
+    height: 500px;
+    border: 8px solid green;
+    margin-top: 50px;
+    margin-bottom: 750px;   /*Just for understanding , Sticky*/  
+}
+
+
+.container2 h1{
+    background: lightyellow;
+     border: 4px solid red;
+     position: absolute;
+/* For putting in Centre */
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);
+}
+
+
+.container2 h3{
+    background: black;
+     color: #fff;
+ /* for putting, our navBar above we use position fixed . */
+ position: fixed;   /*on scrolling , it is fix*/
+ /* For putting in always above , we use */
+ bottom: 0;
+ color: aqua;
+ }
+
+
+.container2 h2{
+    background: black;
+ position: sticky;   /*on scrolling , it is shown only on parent(div) , beacuse it is inside*/
+ top: 0;
+ color: aqua;
+ }
+
+
+h4{
+    background-color: chartreuse;
+    color: hotpink;
+    position: sticky;   /*on scrolling , it is shown on full page , beacuse it is outside*/
+ top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
