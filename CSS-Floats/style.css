@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+.fav-musicians{
+    border: 10px solid green;
+}
+
+.mozart{
+    width: 45%;
+    background-color: aquamarine;
+/*  width: 45%; means it respects to their parent that is div .fav-musicians not body */
+border: 3px solid red;
+float: left;
+}
+
+.beathoven{
+    width: 55%;
+border: 3px solid blue;
+    background-color: blanchedalmond;
+    float: right;
+}
+
+/* <!-- Both floats div crosses the container , for handling this --> */
+
+/* .box{
+    clear: both;
+} */
+
+/* Now, there is no need to use box , use this method */
+
+.clearfix{
+    clear: both;
+}
+
+hr{
+    color: aqua;
+    border: 13px dotted ;
+}
+
+
+/* <!-- Handling Four Div using Float --> */
+
+
+.fourDiv{
+    border: 10px solid lawngreen;
+}
+
+.first{
+    width: 25%;
+    padding: 20px;
+    background-color: aquamarine;
+/*  width: 45%; means it respects to their parent that is div .fav-musicians not body */
+border: 3px solid red;
+float: left;
+}
+
+.IInd{
+    width: 25%;
+    padding: 20px;
+border: 3px solid blue;
+    background-color: blanchedalmond;
+    float: left;
+}
+
+.Third{
+    width: 25%;
+    padding: 20px;
+border: 3px solid orange;
+    background-color: lightpink;
+    float: left;
+}
+
+.last{
+    width: 25%;
+    padding: 20px;
+border: 3px solid magenta;
+    background-color: yellow;
+    float: left;
+}
+
+/* now , 4 div crossing their borders , we can use Clearfix method , But there is also an another way */
+
+.fourDiv::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
