@@ -18,13 +18,29 @@ body{
     background-repeat: no-repeat;
 }
 
+.header .logo ,
+.header .navbar a{
+    color: white;
+}
 
+.header .navbar .logo{
+    float: left;
+}
 
+.header .navbar .nav-items{
+    float: right;
+}
 
+.header .navbar .navItem{
+    display: inline-block;;
+}
+/* for balancing float */
 
-
-
-
+.navbar::after{
+    content: '';
+    display: block;
+    clear: both;
+}
 
 
 
