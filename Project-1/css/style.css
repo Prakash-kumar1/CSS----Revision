@@ -448,7 +448,8 @@ h1,h2.h3{
 }
 
 .form-wrapper{
-    border: 10px solid red;
+    /* border: 10px solid red; */
+    height: 760px;
 }
 
 .form-wrapper::after{
@@ -458,6 +459,7 @@ h1,h2.h3{
 }
 
 .form-wrapper .address{
+    height: 760px;
     background: #fff;
     /* border: 4px solid chartreuse ; */
     width: 49%;
@@ -491,9 +493,10 @@ h1,h2.h3{
 .form-wrapper .form{
     font-size: 1.6rem;
     background: #fff;
-    border: 4px solid rgba(0, 102, 255, 0.436) ;
+    /* border: 4px solid rgba(0, 102, 255, 0.436) ; */
     width: 49%;
     float: right;
+    padding: 1rem;
 }
 
 
@@ -514,15 +517,36 @@ display: block;
     width: 100%;
 }
 
+.form-wrapper .form .form-group{
+    margin-bottom: 1.2rem;
+} 
 
 
+.form-wrapper .form label::after{
+    content: '';
+    color: #e63946;
+}
 
 
+.form-wrapper .form textarea{
+    width: 100%;
+    height: 300px;
+    padding: 1rem;
+}
 
 
-
-
-
+.form-btn{
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em  3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: hotpink;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
 
 
 
