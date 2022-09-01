@@ -6,6 +6,9 @@
     box-sizing: border-box;
 }
 
+/* #########&&&&&&&&*****  HTML  Element Styling  #########&&&&&&&&***** */
+
+
 html{
     /* font-size: 10px; */
     /* By default font-size: is 16px means , 16px ===>>> 100% */
@@ -43,7 +46,14 @@ h1,h2.h3{
     font-weight: 500;
 }
 
+
 /* #########&&&&&&&&*****  Utility Classes  #########&&&&&&&&***** */
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;  /*Putting in center.*/
+}
 
 .lg-heading{
     font-size: 3.5rem;
@@ -55,6 +65,10 @@ h1,h2.h3{
 
 .text-red{
     color: #e63946;
+}
+
+.text-blue{
+    color: aqua;
 }
 
 .text-light{
@@ -69,25 +83,36 @@ h1,h2.h3{
     color: #555;
 }
 
+.btn{
+ /*By default, a tag is inline , so when i give margin and padding it shows problem. Changing display property  */
+ display: inline-block;
+ padding: 0.5em  1.5em;
+ font-weight: 500;
+ text-transform: uppercase;
+ margin: 0.5em 0;
+}
+
+.btn-primary{
+    background-color: #fff;
+    border-radius: 100px;
+}
 
 
 
-
-
-
-
-
-
-
-
-
+/* #########&&&&&&&&*****  Header Styling  #########&&&&&&&&***** */
 
 .header{
+    position: relative;
     height: 95vh;
     background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../images/alex-knight.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.navbar{
+    /* border: 2px dotted white; */
+    padding: 1rem; /*means 10px*/
 }
 
 /* .header .logo ,
@@ -101,13 +126,26 @@ h1,h2.h3{
 
 .header .navbar .nav-items{
     float: right;
+    margin-top: 1rem;
 }
 
 .header .navbar .navItem{
-    display: inline-block;;
+    display: inline-block;
+    padding: 1rem;  /*means 10px*/
+    text-transform: uppercase;
 }
-/* for balancing float */
 
+.navbar a:link ,
+.navbar a:visited{
+    color: #f4f4f4;
+    padding: 0.3rem;
+}
+
+.navbar a:hover{
+    border-bottom: 1px solid white;
+}
+
+/* for balancing float */
 .navbar::after{
     content: '';
     display: block;
@@ -115,6 +153,31 @@ h1,h2.h3{
 }
 
 
+/* #########&&&&&&&&*****  Header  Content  Styling  #########&&&&&&&&***** */
+
+.header-content{
+    /* border: 2px solid white; */
+/*Jisko center mein karna hai uska position => "ABSOLUTE" aur jiske respect mein karna hai position => "RELEATIVE" */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+   text-align: center;
+/* making background littlt bit dark */
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5))
+}
+
+.header-content h1{
+    /* text-align: center; */
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p{
+    text-transform: uppercase;
+    /* font-weight: 700; */
+    text-align: center;
+}
 
 
 
