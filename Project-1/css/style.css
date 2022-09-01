@@ -287,11 +287,18 @@ h1,h2.h3{
 }
 
 
+/* #########&&&&&&&&*****  Footer Styling  #########&&&&&&&&***** */
 
+.footer{
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
 
-
-
-
+.social-media-links i{
+    margin: 2rem;
+}
 
 
 
