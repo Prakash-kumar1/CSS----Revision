@@ -6,9 +6,81 @@
     box-sizing: border-box;
 }
 
+html{
+    /* font-size: 10px; */
+    /* By default font-size: is 16px means , 16px ===>>> 100% */
+    /* then 10px ==>>  ( 100/16 ) * 10 == 62.5% */
+    font-size: 62.5%;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
+    line-height: 1.7;
 }
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.6rem;
+/* now, font-size: 62.5% or 10px then 1.6rem ==>> 1.6*10 ==>> 16px */
+text-decoration: none;
+}
+
+p,li{
+    font-size: 1.6rem;
+/* now, font-size: 62.5% or 10px then 1.6rem ==>> 1.6*10 ==>> 16px */
+    margin-bottom: 0.5em;
+/* now, font-size is 16px , 0.5em means it's half . ie, 8px */
+letter-spacing: 0.15em;
+}
+
+h1,h2.h3{
+    margin-bottom: 0.5em;
+/* now, font-size is 16px , 0.5em means it's half . ie, 8px */
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/* #########&&&&&&&&*****  Utility Classes  #########&&&&&&&&***** */
+
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333;
+}
+
+.text-gray{
+    color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .header{
     height: 95vh;
@@ -18,10 +90,10 @@ body{
     background-repeat: no-repeat;
 }
 
-.header .logo ,
+/* .header .logo ,
 .header .navbar a{
     color: white;
-}
+} */
 
 .header .navbar .logo{
     float: left;
