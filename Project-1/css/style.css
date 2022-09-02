@@ -565,6 +565,7 @@ display: block;
 
 
 /* #########&&&&&&&&***** Header Media Queries  #########&&&&&&&&***** */ 
+
 @media(max-width: 500px){
       html{
         font-size: 50%;
@@ -625,32 +626,25 @@ display: block;
   }
 /* #########&&&&&&&&*****  About.Html page Completed    #########&&&&&&&&******/
 
-}
+
 
 /* #########&&&&&&&&*****  Contact.Html page started    #########&&&&&&&&******/
-/* some problem occur , see on it your own */
 
-/* .form-wrapper .address{
+/* Due to Footer it not looking good in Responsiveness. so, i comment it */
+
+.form-wrapper .address{
     float: none;
     width: 100%;
     height: auto;
     margin-bottom: 5rem;
-} */
+}
 
-/* .form-wrapper .form{
+.form-wrapper .form{
     float: none;
     width: 100%;
     height: auto;
-} */
-
-@media (max-width: 800px){
-    .form-wrapper .address , .form-wrapper .form{
-        float: none;
-        width: 100%;
-        height: auto;
-        margin-bottom: 5rem;
-    }
-
+}
+}
 
 /* #########&&&&&&&&*****  Contact.Html page Completed    #########&&&&&&&&******/
 
