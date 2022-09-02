@@ -49,8 +49,8 @@ body{
     border: 10px solid lightseagreen;
     margin-bottom: 30px;
     display: flex;
-    justify-content: center;
-    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    justify-content: flex-end;
     /* justify-content: flex-start; */
     /* justify-content: space-around; */
     /* justify-content: space-between; */
@@ -58,8 +58,16 @@ body{
 }
 
 
+/* <!-- Using  Justify-Content  with  Flex- Direction --> */
 
-
+.Content1{
+    border: 10px solid darkgoldenrod;
+    height: 800px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
 
 
 
@@ -81,7 +89,7 @@ body{
 .box{
     border: 1px solid #666;
 /* By using Flex-wrap we can control the width */
-    width: 400px; /*Using for Justify Content*/
+    width: 300px; /*Using for Justify Content*/
 }
 
  /* all 5 boxes  are  Flex - Items*/ 
