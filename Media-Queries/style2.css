@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+.box-wrapper{
+border: 2px solid black;
+}
+
+.box1{
+    width: 48%;
+    float: left;
+    background: #ccc;
+    padding: 10px;
+}
+
+.box2{
+    width: 48%;
+    float: right;
+    background: #ccc;
+    padding: 10px;
+}
+
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+@media (max-width: 220px){
+    .box1 , .box2{
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+/* when it comes to 220px then float is none  and  width is 100%*/
+}
