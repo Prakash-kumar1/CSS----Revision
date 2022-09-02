@@ -32,10 +32,24 @@ then h1 is 10rem = 100px and p is 5rem = 50px */
 }
 
 
+@media (min-width:501px) and  (max-width:768px){
+    body{
+        background-color: gold;
+        color: aqua;
+/* Under 500px color is lightcoral , and between 501px to 768px color is gold above 768px color is Lightcyan */
+    }
+}
 
 
-
-
+@media (min-width:1000px){
+    body{
+        background-color: cadetblue;
+        color: hotpink;
+/* Under 500px color is lightcoral , and between 501px to 768px color is gold above 768px color is Lightcyan and when */
+/* it cross width of 1000px then  cadetblue is applied*/
+border-bottom: 3px dotted aquamarine;
+    }
+}
 
 
 
