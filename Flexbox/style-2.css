@@ -1,0 +1,70 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ .box-wrapper{       /* box-wrapper is Flex - Container*/
+    border: 10px solid #222;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+/* Flex-direction and flex-wrap: is a property of Flex - Container. by default , it is row  */
+     flex-direction: row-reverse;
+}
+
+.box{
+    border: 1px solid #666;
+}
+
+ /* all 5 boxes  are  Flex - Items*/ 
+
+.box-1{
+    background: lightblue;
+}
+
+.box-2{
+    background: lightcoral;
+}
+
+.box-3{
+    background: lightgray;
+}
+
+.box-4{
+    background: lightsalmon;
+}
+
+.box-5{
+    background: lightyellow;
+}
+
+
+/* Using Property column-reverse and column */
+
+.container{
+    border: 10px solid brown;
+    margin-bottom: 30px;
+    display: flex;
+    /* Flex-direction and flex-wrap: is a property of Flex - Container. by default , it is row  */
+    flex-direction: column-reverse;
+}
+
+.Box1{
+    height: 80px;
+    width: 80px;
+    background-color: red;
+}
+.Box2{
+    height: 80px;
+    width: 80px;
+    background-color: green;
+}
+.Box3{
+    height: 80px;
+    width: 80px;
+    background-color: yellow;
+}
+.Box4{
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+}
