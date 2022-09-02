@@ -31,22 +31,6 @@ body{
 }
 
 
-/* <!-- we use Align-Content when flex items are in multiple rows  --> */
-
-.container1{       
-    border: 10px dashed burlywood;
-    height: 600px;
-    display: flex; 
-    /* flex-wrap: wrap;
-    align-items: flex-start; 
-    /* align-content: flex-end;  */
-    /* align-content: flex-start;  */
-    /* align-content: space-around;  */
-    /* align-content: space-between;  */
-    /* justify-content: space-between; */ 
-}
-
-
 
 .box{
     border: 1px solid #666;
@@ -77,4 +61,66 @@ body{
 
 
 
+/* <!-- we use Align-Content when flex items are in multiple rows  --> */
 
+.store{
+    border: 10px solid #e2e2e2;
+   margin-bottom: 30px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-around; 
+    justify-content: space-between;
+}
+
+/* Using Align Content with  flex-direction */
+
+
+.store1{
+    border: 10px solid magenta;
+   margin-bottom: 30px;
+     display: flex; 
+    flex-direction: column;
+    height: 600px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+.Box{
+    border: 1px solid blanchedalmond;
+}
+
+ /* all 5 boxes  are  Flex - Items*/ 
+
+.Box-11{
+    background: cadetblue;
+}
+
+.Box-12{
+    background: chocolate;
+}
+
+.Box-13{
+    background: black;
+    color: ghostwhite;
+}
+
+.Box-14{
+    background: lightskyblue;
+}
+
+.Box-15{
+    background: yellowgreen;
+}
