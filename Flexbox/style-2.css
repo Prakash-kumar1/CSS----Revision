@@ -2,17 +2,33 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
  .box-wrapper{       /* box-wrapper is Flex - Container*/
     border: 10px solid #222;
     margin-bottom: 30px;
     text-align: center;
     display: flex;
-/* Flex-direction and flex-wrap: is a property of Flex - Container. by default , it is row  */
-     flex-direction: row-reverse;
+/* flex-wrap: is a property of Flex - Container. it is in direction of Main axis   */
+     flex-wrap: wrap;
 }
+
+
+/* Using Property Wrap-reverse <!-- In Flexbox , Flex-wrap ==>> is in direction of " Main Axis ( left to right )" and when we Wrap-reverse is in Direction of cross  axis ( top to bottom ) --> */
+
+
+.container{
+    border: 10px solid brown;
+    margin-bottom: 30px;
+    display: flex;
+    /* flex-wrap: is a property of Flex - Container. by default , it is in direction of Main axis  */
+    flex-wrap: wrap-reverse;
+}
+
 
 .box{
     border: 1px solid #666;
+/* By using Flex-wrap we can control the width */
+    width: 400px;
 }
 
  /* all 5 boxes  are  Flex - Items*/ 
@@ -38,33 +54,5 @@ body{
 }
 
 
-/* Using Property column-reverse and column */
 
-.container{
-    border: 10px solid brown;
-    margin-bottom: 30px;
-    display: flex;
-    /* Flex-direction and flex-wrap: is a property of Flex - Container. by default , it is row  */
-    flex-direction: column-reverse;
-}
 
-.Box1{
-    height: 80px;
-    width: 80px;
-    background-color: red;
-}
-.Box2{
-    height: 80px;
-    width: 80px;
-    background-color: green;
-}
-.Box3{
-    height: 80px;
-    width: 80px;
-    background-color: yellow;
-}
-.Box4{
-    height: 80px;
-    width: 80px;
-    background-color: blue;
-}
