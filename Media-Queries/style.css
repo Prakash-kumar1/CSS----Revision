@@ -1,0 +1,45 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: lightcyan;
+}
+
+h1{
+    font-size: 10rem;   
+}
+
+p{
+    font-size: 5rem;
+}
+
+/* Using  Media  Queries :=> Always write below than css codes */
+
+@media (max-width:500px){
+ /*max-width:500px means , all devices under 500px it will work.  */
+    html{
+        font-size: 5px;
+/*  font-size: 5px; means now , 10rem = 50px and 5rem = 25px . but when device go above 500px 
+then h1 is 10rem = 100px and p is 5rem = 50px */
+    }
+
+    body{
+        background-color: lightcoral;
+/* Under 500px color is lightcoral , and above 500px color is Lightcyan */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
