@@ -203,6 +203,7 @@ h1,h2.h3{
 
 /* #########&&&&&&&&*****  Showcase  Section  Styling  #########&&&&&&&&***** */
 
+
 .showcase{
     background: #ddd;
     padding: 10rem 0;
@@ -258,6 +259,7 @@ h1,h2.h3{
 
 /* #########&&&&&&&&*****  Features Section  Styling  #########&&&&&&&&***** */
 
+
 .features{
     padding: 10rem 0;
 }
@@ -294,6 +296,7 @@ h1,h2.h3{
 
 /* #########&&&&&&&&*****  Footer Styling  #########&&&&&&&&***** */
 
+
 .footer{
     background: #263238;
     color: #f4f4f4;
@@ -307,6 +310,7 @@ h1,h2.h3{
 
 
 /* #########&&&&&&&&*****  About.html  Page  Styling  #########&&&&&&&&***** */
+
 
 .about{
     padding: 1rem 0rem;
@@ -364,6 +368,7 @@ h1,h2.h3{
 
 /* #########&&&&&&&&*****  Counts Styling  #########&&&&&&&&***** */
 
+
 .counts{
     margin-top: 3rem;
 /* border: 6px solid black; */
@@ -395,6 +400,7 @@ h1,h2.h3{
 
 
 /* #########&&&&&&&&*****  Banner Styling  #########&&&&&&&&***** */
+
 
 .banner{
     background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
@@ -442,6 +448,7 @@ h1,h2.h3{
 
 /* #########&&&&&&&&*****  Contact-Page  Styling  #########&&&&&&&&***** */
 
+
 .contact-form{
     padding: 5rem 0;
     background: #f7f7f7;
@@ -487,6 +494,7 @@ h1,h2.h3{
     object-fit: cover;
     object-position: right;
 }
+
 
 /* #########&&&&&&&&***** Form Styling  #########&&&&&&&&***** */
 
@@ -547,6 +555,114 @@ display: block;
     border: none;
     cursor: pointer;
 }
+
+
+
+/* #########&&&&&&&&***** Media Queries  #########&&&&&&&&***** */
+
+
+/* #########&&&&&&&&***** Home.Html page started #########&&&&&&&&***** */
+
+
+/* #########&&&&&&&&***** Header Media Queries  #########&&&&&&&&***** */ 
+@media(max-width: 500px){
+      html{
+        font-size: 50%;
+      }
+
+      .navbar .nav-items , .navbar .logo{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+
+      .header-content h1{
+        display: none;
+      }
+
+
+/* #########&&&&&&&&***** Showcase Media Queries  #########&&&&&&&&***** */ 
+
+      .row{
+        height: auto;
+        width: 100%;
+      }
+
+      .row .img-box,
+      .row .text-box{
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+
+
+/* #########&&&&&&&&***** Showcase Media Queries  #########&&&&&&&&***** */ 
+.features .box{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.features .box-2 ,
+.features .box-3{
+    margin-top: 5rem;
+}
+
+.box-wrapper{
+    box-shadow: none;
+}
+
+/* #########&&&&&&&&***** Home.Html page completed #########&&&&&&&&***** */
+
+
+/* #########&&&&&&&&*****  About.Html page started    #########&&&&&&&&******/
+ .banner-left ,
+  .banner-right{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+/* #########&&&&&&&&*****  About.Html page Completed    #########&&&&&&&&******/
+
+}
+
+/* #########&&&&&&&&*****  Contact.Html page started    #########&&&&&&&&******/
+/* some problem occur , see on it your own */
+
+/* .form-wrapper .address{
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5rem;
+} */
+
+/* .form-wrapper .form{
+    float: none;
+    width: 100%;
+    height: auto;
+} */
+
+@media (max-width: 800px){
+    .form-wrapper .address , .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+
+/* #########&&&&&&&&*****  Contact.Html page Completed    #########&&&&&&&&******/
+
+
+
+
+
+
+
+
+
+
 
 
 
