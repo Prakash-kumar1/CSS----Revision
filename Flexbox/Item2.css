@@ -2,40 +2,46 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
- .box-wrapper{       /* box-wrapper is Flex - Container*/
+
+ .box-wrapper{      
     border: 10px solid #222;
-    margin-bottom: 30px;
-    text-align: center;
+    width: 1200px;
     display: flex;
     /* flex-direction: column; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */       /*comment it for shows the effect of Flex-Grow*/
 }
 
-/* Flex-Basis  is Intial length of item towards main-axis (Read it on your own) */
 
+/* Flex-Basis  is Intial length of item towards main-axis (Read it on your own) */
 
 
 .box{
     border: 1px solid #666;
     flex-basis: 300px;
-    width: 400px;
+    /* width: 400px; */     /*Flex-Basis has more priority than Height and  Width*/
 /* Checking flex-basis when flex-direction is column */
 /* height: 500px; */
 }
 
- /* all 5 boxes  are  Flex - Items*/ 
+ /* Using Flex-grow*/ 
 
 .box-1{
     background: lightblue;
+    flex-grow: 1; /*means , it will take remaining space one time*/
 }
 
 .box-2{
     background: lightcoral;
+    /*By default , the value of flex-grow is 0 (zero)*/
 }
 
 .box-3{
     background: lightgray;
+    flex-grow: 2; /*means , it will take remaining space 2 time  than other*/
 }
+
+
+ /*Box-4 and Box-5 comment it for shows the effect of Flex-Grow*/
 
 .box-4{
     background: lightsalmon;
@@ -43,4 +49,36 @@ body{
 
 .box-5{
     background: lightyellow;
+}
+
+
+/* <!-- Using  Flex-Shrink ==> For seeing the effect comment all the above div and Classes in HTML page--> */
+
+
+.container{      
+    border: 10px solid aqua;
+    width: 1200px;
+    display: flex;
+}
+
+/* flex-shrink ==>>  Greater value more shrink (smallest)  smaller value  larger space */
+
+.div{
+    border: 1px solid #666;
+    flex-basis: 600px;
+}
+
+.store-1{
+    background: lightblue;
+    flex-shrink: 3;   /*Taking minimum space from store-2  and maximum space from store-3*/
+}
+
+.store-2{
+    background: lightcoral;
+    flex-shrink: 1;        /*Taking maximum space from store-1  and  store-2*/ 
+}
+
+.store-3{
+    background: lightgray;
+    flex-shrink: 7;     /*Taking minimum space from store-1  and  store-2*/
 }
