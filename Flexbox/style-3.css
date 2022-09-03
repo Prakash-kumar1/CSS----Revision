@@ -12,8 +12,8 @@ body{
     margin-bottom: 30px;
     display: flex;
     /* align-items: flex-start; */
-    /* align-items: flex-end; */
-    align-items: center;
+    align-items: flex-end;
+    /* align-items: center; */
 }
 
 
@@ -26,8 +26,8 @@ body{
     display: flex;
     flex-direction: column;
     /* align-items: flex-start; */
-    align-items: flex-end;
-    /* align-items: center; */
+    /* align-items: flex-end; */
+    align-items: center;
 }
 
 
@@ -69,13 +69,13 @@ body{
     height: 700px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    align-content: space-around; 
-    justify-content: space-between;
+    align-items: center;
+    align-content: space-between; 
+    justify-content: flex-end;
 }
 
-/* Using Align Content with  flex-direction */
 
+/* Using Align Content with  flex-direction */
 
 .store1{
     border: 10px solid magenta;
@@ -91,19 +91,13 @@ body{
 
 
 
-
-
-
-
-
-
-
 .Box{
     border: 1px solid blanchedalmond;
 }
 
  /* all 5 boxes  are  Flex - Items*/ 
 
+ 
 .Box-11{
     background: cadetblue;
 }
