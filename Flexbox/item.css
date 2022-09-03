@@ -2,6 +2,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* <!-- For Writting , Flex-direction and flex-wrap both , we use Flex-Flow --> */
+
 
  .box-wrapper{      
     border: 10px solid #222;
@@ -17,8 +19,9 @@ body{
 }
 
  /* all 5 boxes  are  Flex - Items*/ 
-/* Align-self overrides  Align-Items */
 
+
+/* Using Align-self ==>>  Align-self  overrides  Align-Items */
 
 .box-1{
     background: lightblue;
@@ -35,10 +38,51 @@ body{
     align-self: flex-end;
 }
 
-.box-4{
-    background: lightsalmon;
+
+
+/* <!-- Using Order ==>>  Order small comes first , Order greater Comes last--> */
+
+
+.boxWrapper{      
+    border: 10px solid aqua;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.box-5{
+.Box{
+    border: 1px solid #666;
+    width: 200px;
+}
+
+ /* all 5 boxes  are  Flex - Items*/ 
+
+
+/* Using Align-self ==>>  Align-self  overrides  Align-Items */
+
+.Box-1{
+    background: lightblue;
+    order: 2;
+}
+
+.Box-2{
+    background: lightcoral;
+    order: 5;
+}
+
+.Box-3{
+    background: lightgray;
+    order: 3;
+}
+
+.Box-4{
+    background: lightsalmon;
+    order: 0;
+
+}
+
+.Box-5{
     background: lightyellow;
+    order: 4;
 }
