@@ -18,8 +18,6 @@ body{
     width: 300px;
 }
 
- /* all 5 boxes  are  Flex - Items*/ 
-
 
 /* Using Align-self ==>>  Align-self  overrides  Align-Items */
 
@@ -56,10 +54,6 @@ body{
     width: 200px;
 }
 
- /* all 5 boxes  are  Flex - Items*/ 
-
-
-/* Using Align-self ==>>  Align-self  overrides  Align-Items */
 
 .Box-1{
     background: lightblue;
@@ -86,3 +80,4 @@ body{
     background: lightyellow;
     order: 4;
 }
+
