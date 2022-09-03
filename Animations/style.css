@@ -1,0 +1,112 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background: black;
+/* steps for Animating the element */
+
+/* step=>1   write  Animation name */
+    animation-name: changeBg;
+
+/* step=>2   write  duration from black to pink */
+    animation-duration: 5s;
+
+/* step=>3 on refreshing page , it starts but we want some delay */
+    animation-delay: 3s;
+
+/* step=>4 Animation happen only one time after that it stops , we want again animation */
+    animation-iteration-count: 5;
+}
+
+
+@keyframes changeBg{
+    from{
+        background: black;
+    }
+    to{
+        background: hotpink;
+    }
+}
+
+
+/* Applying  Basic  Animation   in  Properties */
+
+
+.box1{
+    width: 100px;
+    height: 120px;
+    background-color: lightcoral;
+/* steps for Animating the element */
+
+/* step=>1   write  Animation name */
+animation-name: bgColor;
+
+/* step=>2   write  duration from black to pink */
+    animation-duration: 3s;
+
+/* step=>3 on refreshing page , it starts but we want some delay */
+    animation-delay: 2s;
+
+/*After becoming dodgerblue , it again becomes lightcoral in color  */
+/* but we want dogerblue color  */
+   animation-fill-mode: forwards;
+}
+
+@keyframes bgColor{
+    from{
+        background: lightcoral;
+    }
+    to{
+        background: dodgerblue;
+    }
+}
+
+
+/* Applying  Basic  Animation   in  Width */
+
+
+.box2{
+    width: 15px;
+    height: 10px;
+    background: red;
+    animation-name: grow-width;
+    animation-duration: 4s;
+/* On stopping at full width */
+    animation-fill-mode: forwards;
+/* reversing the width */
+    animation-direction: reverse ;
+}
+
+@keyframes grow-width{
+    from{
+        width: 0;
+    }
+    to{
+        width: 200px;
+    }
+}
+
+
+/* Applying  Basic  Animation   in  Height */
+
+.box3{
+    width: 15px;
+    height: 10px;
+    background: gold;
+    animation-name: grow-height;
+    animation-duration: 4s;
+/* On stopping at full height */
+    animation-fill-mode: forwards;
+/* reversing the width */
+    animation-direction: reverse ;
+}
+
+@keyframes grow-height{
+    from{
+        background: gold;
+        height: 0;
+    }
+    to{
+        background: green;
+        height: 300px;
+    }
+}
