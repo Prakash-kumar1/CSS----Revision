@@ -1,0 +1,67 @@
+/* box is Flex-container */
+
+.box{
+    display: flex;
+}
+
+.box div{
+    padding: 14px;
+    font-size: large;
+    font-family: cursive;
+    border-radius: 6px;
+    flex-grow: 1;
+    margin: 4px;
+    color: #aaa;
+    background-color: black;
+}
+
+/* for each Nested row , i use different background- coloring */
+
+div .r1{
+    display: flex;
+    padding: 1px;
+}
+
+.r1 div{
+    flex-grow: 2;
+    background-color: rgb(6, 255, 81);
+    color: black;
+}
+
+
+div .r2{
+    display: flex;
+    padding: 1px;
+}
+
+.r2 div{
+    background-color: aqua;
+    color: black;
+}
+
+
+div .r3{
+    display: flex;
+    padding: 1px;
+}
+
+.r3 div{
+    background-color: gold;
+    color: black;
+}
+
+
+.box2{
+    display: flex;
+}
+
+.box2 div{
+    padding: 10px;
+    font-size: larger;
+    font-family: cursive;
+    border-radius: 6px;
+    flex-grow: 2;
+    margin: 4px;
+    color: aliceblue;
+    background-color: black;
+}
