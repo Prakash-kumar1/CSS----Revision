@@ -51,12 +51,12 @@ input:required{
 
 h3:first-child{
     color: chartreuse;
-}  */
+} 
 
-/* p:first-of-type{ */
+p:first-of-type{ */
 /* this will Over-ride Brown color */
-    /* color: darkmagenta; */
-/* } */
+    /* color: darkmagenta;
+} */
 
 /* Last Child  and  Last of type Pseudo class */
 
@@ -66,12 +66,12 @@ h3:first-child{
 
 h3:last-child{
     color: hotpink;
-} */
+} 
 
-/* p:last-of-type{ */
+ p:last-of-type{ */
 /* this will Over-ride Brown color */
-    /* color: blue; */
-/* } */
+    /* color: blue; 
+ }  */
 
 
  /* ######## First Comment From Line => 46  to Line => 74  Then use this. Otherwise , You Will Confuse  ######## */
