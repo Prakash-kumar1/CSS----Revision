@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: lightskyblue;
 }
 
 
@@ -51,8 +50,9 @@ gap: 20px 30px;
     grid-template-columns: repeat(4 , 1fr);
 /* It will take row implicitly But if we want to give row then */
     grid-template-rows: 100px 200px;
-/* Now Ist row becomes 100px and IInd row becomes 200px  */
-
+/* Now Ist row becomes 100px, IInd row becomes 200px . IIIrd  and  4th row takes implicit width and height. for removing Implicit we use */
+grid-auto-rows: 300px;
+/* If we comment line no-53 , then all 4 rows takes height of 300px . */
 }
 
 
