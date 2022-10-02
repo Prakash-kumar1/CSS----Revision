@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: lightskyblue;
 }
 
 
@@ -15,11 +16,20 @@ body{
 .container{
     max-width: 1000px;
     border: 6px solid red;
-    margin: auto;
+    margin: 100px auto;
     display: grid;   /*now, it becomes a Grid Container*/
+
     /* grid-template-columns: 100px 300px 400px 150px; */
-    grid-template-columns: 33% 33% 33%;
-    column-gap: 10px;
+    /* grid-template-columns: 33% 33% 33%; */
+
+
+/*on giving larger column-gap , Item go to outside from Grid Container, so we use  fractions { fr } . Doesn't matter How much Column gap
+is , it always remains inside the container .  when we use grid , we use fractions { fr } */
+grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+/* OR we can also write Column gap and row gap as */
+gap: 20px 30px;
 }
 
 
@@ -33,7 +43,17 @@ body{
 
 
 
+.Store{
+    max-width: 1000px;
+    border: 6px solid red;
+    margin: 100px auto;
+    display: grid;   /*now, it becomes a Grid Container*/
+    grid-template-columns: repeat(4 , 1fr);
+/* It will take row implicitly But if we want to give row then */
+    grid-template-rows: 100px 200px;
+/* Now Ist row becomes 100px and IInd row becomes 200px  */
 
+}
 
 
 
