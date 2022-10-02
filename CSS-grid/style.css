@@ -17,7 +17,8 @@ body{
     border: 6px solid red;
     margin: auto;
     display: grid;   /*now, it becomes a Grid Container*/
-    grid-template-columns: 100px 300px 400px 150px;
+    /* grid-template-columns: 100px 300px 400px 150px; */
+    grid-template-columns: 33% 33% 33%;
     column-gap: 10px;
 }
 
