@@ -6,7 +6,6 @@
 h1{
     font-size: 32px;
     color: brown;
-
 }
 
     /* 1.) Absolute Units Examples :  */
@@ -80,7 +79,6 @@ html{
 }
 
 
-
 /* em Units ==>> This calculates size respective to their Body */
 
 .box2{
@@ -110,8 +108,9 @@ h2{
 }
 
 
-
-
+/* Question :-1 => difference between rem and em in css ??*/
+/*Answer-> both rem and em are scalable & relative units of size, but with em, the unit is relative to the  
+font size of its parent element, while the rem unit is only relative to the root font size of the HTML document.*/
 
 
 
