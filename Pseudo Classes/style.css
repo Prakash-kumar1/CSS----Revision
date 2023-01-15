@@ -1,8 +1,8 @@
-/* <!--there are 4 Pseudo Classes => Link , Visited , Hover , Active --> */
+/* <!--there are 4 Pseudo Classes => Link, Visited, Hover, Active --> */
 
 /* Before visiting */
 a:link{
-    color: orange;
+    color: magenta;
 }
 
 /* After visiting */
