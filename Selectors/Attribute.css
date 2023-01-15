@@ -38,7 +38,9 @@ a[href $= ".in"]{
     }
     
 
-/* CSS Specificity =>> */
+/* CSS Specificity =>> Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration. 
+                    The weight is determined by the number of selectors of each weight category in the selector 
+                         matching the element (or pseudo-element). */
 
 /* Inline style attribute > Id selector > Class selector > Element selector  */
 
